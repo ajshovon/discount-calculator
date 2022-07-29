@@ -34,8 +34,8 @@ fieldset {
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 88%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 88vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
@@ -94,3 +94,24 @@ strong {
     margin: auto;
   }
 }
+
+  
+  footer{ min-height:50px;
+    padding-top: 6vh;
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+    font-size: small;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    margin-top:auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgb(13, 90, 153);
+  }
+  footer a:hover {
+    text-decoration: none;
+    color: gray;
+  }
