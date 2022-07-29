@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+}
+
+label {
+  width: 200px;
+  float: left;
+  /* padding-top: 10px; */
+}
+
+.form-control {
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-top: 0px !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+output {
+  height: 30px;
+  display: block;
+  padding-top: 20px;
+}
+
+fieldset {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid lightgray;
+  width: 420px;
+  margin: auto;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+li {
+font-size: large;
+}
+
+.hpad {
+  padding-top: 6rem;
+}
+
+/* .round_br {
+  border: 2px solid green;
+  border-radius: 6px;
+  margin-right: 18rem !important;
+} */
+
+strong {
+  padding-left:.4rem;
+  padding-right:.4rem;
+  padding-top:.05rem;
+  padding-bottom:.05rem;
+  background-color:green;
+  color: white;
+  border-radius: 4px;
+}
+
+#result {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#info {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#notice_show {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#res_price{
+  background-color:rgb(22, 94, 202) !important;
+}
+
+@media screen and (max-width: 500px) {
+  fieldset {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid lightgray;
+    width: 360px;
+    margin: auto;
+  }
+}

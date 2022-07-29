@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discount Calculator</title>
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png" />
+    <meta name="description" content="Discount Calculator" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script type="text/javascript" src="assets/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="jumbotron vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6">
+            <form class>
+              <fieldset>
+                <legend>Discount Calculator</legend>
+                <div class="form-group">
+                  <label>Product MRP</label>
+                  <input type="number" class="form-control mrp" />
+                </div>
+                <div class="form-group">
+                  <label>Discounted Price</label>
+                  <input type="number" class="form-control dis_price" />
+                </div>
+                <div class="form-group">
+                  <label>Discount % on Payment</label>
+                  <input type="number" class="form-control dis_payment" />
+                </div>
+                <div class="form-group">
+                  <label>Discount Limit on Payment</label>
+                  <input type="number" class="form-control dis_payment_limit" />
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                  <button type="button" id="Calculate" class="btn btn-success">
+                    Calculate
+                  </button>
+                  <button type="button" id="reset" class="btn btn-secondary">
+                    Reset
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="col col-lg-6">
+            <div id="result" style="display: none">
+              <h2 class="hpad">Results</h2>
+              <ul>
+                <li id="offer_discount">offer_discount</li>
+                <li id="final_price">final_price</li>
+                <li id="total_discount_tk">total_discount_tk</li>
+                <li id="total_discount_per">total_discount_per</li>
+              </ul>
+            </div>
+            <div id="info">
+              <h4 class="hpad">Enter Info To Calculate</h4>
+              <p>
+                Enter product's original price, discounted price, payment
+                partner discount (if any) to calculate how much total discount
+                you are getting.
+              </p>
+            </div>
+            <div id="notice_show" style="display: none">
+              <h4 class="hpad">Enter Info To Calculate</h4>
+              <p>
+                Warning... <br />Enter mrp and discounted price...<br />*Discounted
+                price can't be greater than product price.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
